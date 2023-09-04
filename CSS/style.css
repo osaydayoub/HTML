@@ -1,0 +1,18 @@
+.Div1{
+    font-size: 25px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: thin;
+    border-color: red;
+}
+.Div2{
+    font-weight: bold;
+    font-style: italic;
+}
+.Div3{
+    color: white;
+    background-color: black;
+    box-shadow: 5px 5px lightgrey;
+    font-family: monospace;
+}
+
