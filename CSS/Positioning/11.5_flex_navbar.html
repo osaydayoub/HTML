@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.5_flex_navbar</title>
+</head>
+<style>
+
+    body{
+        height: 100vh;
+        width: 100vw;
+        /* border: solid black 1px; */
+        background-color: rgb(251, 230, 198);
+        margin: 0;
+    }
+    .navbar{
+        background-color: rgb(251, 280, 198);
+        display:flex;
+        width: 100%;
+        height: 70px;
+        justify-content:space-between;
+
+    }
+    .header{
+        width: 25%;
+        line-height: 70px;
+        text-align: left;
+        font-size: 25px;
+        height: 100%;
+    }
+    
+    .container{
+        display:flex;
+        width: 65%; 
+        height: 100%;  
+        justify-content:end;
+    }
+
+    .container a {
+        color: white;
+        text-decoration: none;
+        margin: 10px 10px;
+        padding: 15px 10px;
+        border-radius: 10px;
+        
+        
+    }
+    .box-1{
+        background-color: forestgreen;
+    }
+    .box-2{
+        background-color: rgb(66, 66, 237);
+    }
+    .box-3{
+        background-color: orangered;
+    }
+    .box-4{
+        background-color: #A927B5;
+    }
+    /* Smartphones */
+    @media only screen and (max-width: 768px) {
+        .navbar{
+        background-color: rgb(251, 280, 198);
+        display:flex;
+        flex-direction:column;
+        width: 50%;
+        height: 450px;
+        margin: auto;
+        justify-content:space-between;
+        gap: 0px;
+        }
+
+        .header{
+        width: 100%;
+        line-height: 100px;
+        text-align:center;
+        font-size: 25px;
+        height: 25%;
+        }
+
+        .container{
+        width: 100%; 
+        height: 75%; 
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:start;
+        }
+   
+  
+  
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="header">APPLESEEDS</div>
+        <div class="container">
+            <a class="box-1" href="./HOME/">HOME</a>
+            <a class="box-2" href="./ABOUT/">ABOUT</a>
+            <a class="box-3" href="./PORTFOLIO/">PORTFOLIO</a>
+            <a class="box-4" href="./CONTACT/">CONTACT</a>
+        </div>
+    </div>
+</body>
+</html>
