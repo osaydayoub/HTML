@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>9.1_responsive_text</title>
+    <title>9.3_side_part_disappearance</title>
 </head>
 <style>
     body{
@@ -11,7 +11,13 @@
         background: rgb(179, 241, 179);
     }
     
-    box1{
+    .box1{
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+
+    }
+    .box2{
         border: 1px solid black;
         width: 100px;
         height: 300px;
@@ -19,28 +25,21 @@
     }
     /* Smartphones */
     @media only screen and (max-width: 500px) {
-      body {
-        flex-direction: column;
-      }   
-      body>div{
-        border: 1px solid black;
-        width: 150px;
-        height: 250px;
+        .box2{
+        display: none;
     }
     }
 
 </style>
 <body>
     
-    <main class="box1">
+    <div class="box1">
        Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Dolore aliquam corrupti distinctio hic praesentium mollitia ipsa voluptatem,
         neque recusandae rem, saepe, laborum culpa dignissimos molestiae?
     </div>
     <div class="box2">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Ratione dicta blanditiis mollitia quam deleniti atque consequuntur
-         officiis molestiae earum. Quasi?
     </div>
 
 </body>
