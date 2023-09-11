@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>12.3_pseudo_box_color_animater</title>
+</head>
+<style>
+    .box{
+        background-color: green;
+        width: 500px;
+        height: 500px;
+    }
+    .box::after {
+        content:'';
+        background-color: blueviolet;
+        padding-right: 250px;
+        padding-bottom: 482px;      
+    }
+    .box:hover::after {
+        content:'';
+        background-color: rgb(234, 18, 18);    
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
