@@ -1,0 +1,99 @@
+
+body {
+    background-color:rgb(253, 231, 164);
+}
+
+header{
+    
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #333;  
+  }
+  
+  .navbar{
+    
+    padding-left: 40px;
+    font-size: 30px;
+    position: sticky;
+     
+  }
+  
+  .navbar a{
+    float: left;
+    text-decoration: none;
+    color: 	#D4AF37;
+    margin: 10px 10px;
+    background-color: #2B65EC;
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+   
+  }
+  
+  .navbar a:hover{
+    color: #2B65EC;	
+    background-color: #D4AF37;
+  }
+
+
+.Div1{
+    text-align:center;
+    font-size: 50px;
+    background-color: #2B65EC;
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 25%;    
+}
+.Div2{
+    padding-bottom: 5px;
+    margin-top: 10px;
+    text-align:left;
+    font-size: 24px;
+    background-color: #2B65EC;
+    color: white;
+    border: 2px solid black;
+    width: 30%;
+}
+
+
+footer{
+    
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #333;  
+  }
+  
+  .github-button{
+    
+    padding-left: 40px;
+    font-size: 30px;
+    position: sticky;
+     
+  }
+  
+  .github-button a{
+    float: left;
+    text-decoration: none;
+    color: 	#D4AF37;
+    margin: 10px 10px;
+    background-color: #2B65EC;
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+   
+  }
+  
+  .github-button a:hover{
+    color: #2B65EC;	
+    background-color: #D4AF37;
+  }
+ 
+
+

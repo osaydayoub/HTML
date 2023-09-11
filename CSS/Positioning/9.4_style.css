@@ -1,0 +1,10 @@
+/* Smartphones */
+@media only screen and (max-width: 768px) {
+    .Div1{
+      display: none;
+    }
+    .Div2{
+        text-align: center;
+        width: 80%;
+    }
+}
