@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>12.4_cool_border</title>
+</head>
+<style>
+    body{
+        width: 800px;
+        height: 800px;
+        background-color: black;
+        position: relative;  
+    }
+    .box{
+        position: absolute;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        border: solid 5px red;
+        width: 250px;
+        height: 250px;
+        text-align: center;
+        line-height: 250px;
+        top:200px;
+        left: 200px;
+ 
+    }
+
+    
+    .box::before {
+        position: absolute;
+        top: -5px;
+        left: 42px;
+        padding-top: 70px;
+        padding-bottom: 180px;
+        padding-left: 155px;
+
+        content:'';
+        color: white;
+        text-align: center;
+        border: solid 5px black;
+        margin-bottom: 100px;
+            
+    }
+    .box::after {
+        position: absolute;
+        top: 42px;
+        left: -7px;
+        padding-top: 150px;
+        padding-left: 250px;
+        content:'';
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        border: solid 7px black;
+        margin-bottom: 100px;
+            
+    }
+
+</style>
+<body>
+    <div class="box">Cool Border</div>
+</body>
+</html>
