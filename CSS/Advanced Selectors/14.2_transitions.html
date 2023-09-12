@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14.2_transitions</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    body{
+    background-color:darkgrey;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    
+    }
+
+.container{
+    height: 200px;
+    width: 600px;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+}
+.box{
+position: relative;
+    border: solid 2px black;
+    height: 80px;
+    width: 160px;
+    text-align: center;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+.TranslateY::after{
+    content: 'Cool!';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+    transform: translateY(-80px);
+    transition: all .8s;
+}
+.TranslateY:hover::after{
+    content: 'Cool!';
+    transform: translate(0px);  
+}
+
+.TranslateX::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+    transform: translateX(-160px);
+    transition: all .8s;
+    z-index: -1;
+    
+}
+.TranslateX:hover::after{
+    transform: translateX(0px);
+}
+
+.Rotate::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: yellow;
+    transform: rotate(90deg);
+    transform-origin: left top;
+    transition: all .8s;
+    z-index: -1;
+    
+}
+.Rotate:hover::after{
+    transform: rotate(0deg);
+}
+
+.Scale::after{
+    content: 'Scale';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    background-color: black;
+    color: white;
+    transform: scale(4);
+    opacity: 0;
+    transition: all .8s;
+}
+.Scale:hover::after{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.Skew:hover {
+        display: inline-block;
+        transform: skewY(-5deg);
+}
+
+
+
+/* .Skew::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    background-color: deeppink;
+    transform: skew(90deg);
+    transition: all .8s;
+}
+.Skew:hover::after{
+    transform: skew(0deg);
+
+
+} */
+
+
+</style>
+<body>
+    <div class="container container1">
+        <div class="box TranslateY">TranslateY</div>
+        <div class="box TranslateX">TranslateX</div>
+        <div class="box Rotate">Rotate</div>
+    </div>
+    <div class="container container2">
+        <div class="box Scale">Scale</div>
+        <div class="box Skew">Skew</div>
+    </div>
+</body>
+</html>
