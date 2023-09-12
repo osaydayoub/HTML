@@ -1,0 +1,114 @@
+
+:root{
+
+  --main-background-color:#ADD8E6;
+  --primary-color:#006400;
+  --secondary-color:#EAC117;
+  --navbar-color:#033E3E;
+
+
+ /* --main-background-color:rgb(253, 231, 164);
+ --primary-color:#2B65EC;
+ --secondary-color:#D4AF37;
+ --navbar-color:#333; */
+
+}
+
+body {
+    background-color:var(--main-background-color);
+}
+
+header{
+    
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color:var(--navbar-color);  
+  }
+  
+  .navbar{
+    
+    padding-left: 40px;
+    font-size: 30px;
+    position: sticky;
+     
+  }
+  
+  .navbar a{
+    float: left;
+    text-decoration: none;
+    color: 	var(--secondary-color);
+    margin: 10px 10px;
+    background-color:var(--primary-color);
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+   
+  }
+  
+  .navbar a:hover{
+    color: var(--primary-color);	
+    background-color: var(--secondary-color);
+  }
+
+
+.Div1{
+    text-align:center;
+    font-size: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid black;
+    border-radius: 6px;
+    width: 25%;    
+}
+.Div2{
+    padding-bottom: 5px;
+    margin-top: 10px;
+    text-align:left;
+    font-size: 24px;
+    background-color: var(--primary-color);
+    color: white;
+    border: 2px solid black;
+    width: 30%;
+}
+
+
+footer{
+    
+    display: flex;
+    align-items: left ;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var( --navbar-color);  
+  }
+  
+  .github-button{
+    
+    padding-left: 40px;
+    font-size: 30px;
+    position: sticky;
+     
+  }
+  
+  .github-button a{
+    float: left;
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 10px 10px;
+    background-color: var(--primary-color);
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+   
+  }
+  
+  .github-button a:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+  }
+ 
+
+

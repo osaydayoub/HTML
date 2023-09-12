@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14.1_simple_transition</title>
+</head>
+<style>
+.box{
+    background-color: #daa520;
+    height: 400px;
+    width: 400px;
+    /* overflow: hidden; */
+    position: relative;
+}
+
+.box::after{
+    content:'';
+    background-color: green;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: width .8s;
+}
+.box:hover::after {
+    content:'';
+    background-color: green;
+    position: absolute;
+    width: 0%;
+}
+
+
+
+
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
