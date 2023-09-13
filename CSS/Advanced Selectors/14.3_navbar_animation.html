@@ -15,23 +15,72 @@
 
 
 .navbar  a {
+  position: relative;
   text-decoration: none;
   color: black;
   padding: 10px 20px;
-  border-bottom:solid 3px black ;
+  /* border-bottom:solid 3px white ; */
+  overflow: hidden;
+}
 
+/* .navbar a::after{
+  content: '';
+  height: 100%;
+    width: 100%;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  border-bottom:solid 3px black ;
+  transform: translateX(160px);
+  transition: all .8s;
+}
+
+a:hover::after{
+  transform: translateX(0px);
+} */
+.navbar a::after{
+  content:'';
+  height: 100%;
+    width: 100%;
+  position: absolute;
+  background: transparent;
+  top: -3px;
+  left: 0;
+  border-bottom:solid 3px black ;
+  transform: translateX(100px);
+  transition: all .8s;
+}
+
+ a:hover::after{
+  transform: translateX(0px);
 }
 
 
+.navbar a::before{
+  content:'';
+  height: 100%;
+    width: 100%;
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  border-top:solid 3px black ;
+  transform: translateX(-100px);
+  transition: all .8s;
+}
 
+ a:hover::before{
+  transform: translateX(0px);
+}
 </style>
 <body>
-    <nav class="navbar">        
+    <nav class="navbar">
             <a  href="14.3_navbar_animation.html">Home</a>
             <a  href="14.3_navbar_animation.html">About</a>
             <a  href="14.3_navbar_animation.html">Services</a>
             <a  href="14.3_navbar_animation.html">Portfolio</a>
-            <a  href="14.3_navbar_animation.html">Contact</a>       
+            <a  href="14.3_navbar_animation.html">Contact</a>
       </nav>
 </body>
 </html>
